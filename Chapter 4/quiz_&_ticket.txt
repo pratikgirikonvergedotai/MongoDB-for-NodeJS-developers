@@ -1,0 +1,41 @@
+Which of the following are benefits of connection pooling?
+
+answer : 
+1) A large influx of operations can be handled more quickly with a pool of existing connections.
+2) New operations can be serviced with pre-existing connections, so a new connection doesn't have to be created each time.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ticket: Connection Pooling
+
+code : 5ad4f4f58d4b377bcf55d742
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+When should you set a wtimeout?
+
+answer : When our application is using a Write Concern more durable than w: 1.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ticket: Timeouts
+
+code : 5addf035498efdeb55e90b01
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Given a replica set with 5 nodes which write concern will cause an error when writing?
+
+answer : 7
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ticket: Handling Errors
+
+code : 5ae9b76a703c7c603202ef22
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ticket: Principle of Least Privilege
+
+code : 5b61be29094dbae03bf30616

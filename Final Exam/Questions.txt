@@ -1,0 +1,80 @@
+Which of the following queries will retrieve all the Republican winners with at least 160 electoral votes?
+
+answer : 
+elections.find( { winner_party: "Republican",
+                     winner_electoral_votes: { "$gte": 160 } } )
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Which of the following update statements will correctly perform this update?
+
+answer : 
+phones.updateMany( { software_version: { "$lt": 4.0 } },
+                       { "$set": { needs_to_update: true } } )
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Suppose an instance of MongoClient is created with the following settings:
+
+import { MongoClient } from "mongodb"
+
+const URI = "mongodb+srv://m220-user:m220-pass@m220-test.mongodb.net/test"
+
+const testClient = await MongoClient.connect(
+  URI,
+  {
+    authSource: "admin",
+    connectTimeoutMS: 50,
+    retryWrites: true,
+    useNewUrlParser: true
+  },
+)
+
+
+Please find the documentation on Connection String URI Format here. The variable representing our client, testClient, will:
+
+answer:
+1) automatically retry writes that fail.
+
+2) wait at most 50 milliseconds for timing out a connection
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+What Write Concern was used in this operation?
+
+answer: 
+w : majority
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Which of the insert operations in requests will succeed?
+
+answer: insert #1, #2, #3
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Suppose a client application is sending writes to a replica set with three nodes, but the primary node stops responding:
+Assume that none of the connection settings have been changed, and that the client is only sending insert statements with write concern w: 1 to the server.
+After 30 seconds, the client still cannot connect to a new primary. Which of the following errors will be thrown by the Node.js driver, and how should it be handled?
+
+answer : a Timeout error, resolved by wrapping the call in a try/catch block
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Assume a collection called people_heights with documents that look like this:
+
+{
+  name: "Ada",
+  height: 1.7
+}
+
+Which of the following queries will find only the 4th- and 5th-tallest people in the people_heights collection?
+
+answer : people_heights.find().sort({ height: -1 }).skip(3).limit(2)
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

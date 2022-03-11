@@ -1,0 +1,7 @@
+mongodb+srv://brigitte:bardot@xyz-1234.srv.net/admin
+which of the following statements is true ?
+
+answer: The password used to authenticate is bardot
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

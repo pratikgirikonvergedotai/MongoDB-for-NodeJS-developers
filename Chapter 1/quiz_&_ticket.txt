@@ -1,0 +1,34 @@
+During this course, which are some of the files that you will have to edit?
+
+answer :
+1) moviesDao.js  
+2) commentsDao.js
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Select the true statements below.
+
+1) All await statements should be surrounded by a try/catch block.
+2) To use the await keyword, the enclosing function must be marked async.
+3) If a callback isn't provided, asynchronous methods in the Node driver will return a Promise.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Which of the following statements is true regarding reads in MongoDB?
+
+1) We must explicitly remove the _id field in a projection if we do not want to include this field.
+2) Field projection is specified as a JSON object.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ticket: Projection
+
+code : 5a94762f949291c47fa6474d
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ticket: Text and Subfield Search
+
+code : 5a96a6a29c453a40d04922cc
